@@ -12,7 +12,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    connectionString : 'postgres://smart_brain_ld63_user:GCaBONieuvs6LmkqHxlK1zlfjp33wUB5@dpg-cjd5cjs5kgrc73ancn6g-a.frankfurt-postgres.render.com/smart_brain_ld63',
+    host : process.env.DATABASE_URL,
   	ssl: true,
   }
 });
