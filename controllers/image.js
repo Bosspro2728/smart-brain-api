@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 // Your PAT (Personal Access Token) can be found in the portal under Authentification
-const PAT = '11cbd022b3144b829eaf75214c1a15b2';
+const PAT = process.env.PAT;
 // Specify the correct user_id/app_id pairings
 // Since you're making inferences outside your app's scope
 const USER_ID = '3lwetx2hzyc4';       
